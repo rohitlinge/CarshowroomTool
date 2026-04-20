@@ -127,3 +127,47 @@ list-style: none;
 font-weight: 700;
 
 }
+
+form{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+width: 300px;
+height: 200px;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.373);
+}
+
+#username{
+
+width: 200px;
+height: 30px;
+border: none;
+padding: 10px;
+}
+
+#passward{
+
+width: 200px;
+height: 30px;
+border: none;
+padding: 10px; 
+}
+
+#buttonsinup{
+
+width: 150px;
+height: 30px;
+border: none;
+border-radius: 10px;
+font-weight: 600;
+color: rgba(0, 0, 0, 0.531);
+}
+
+#buttonsinup:active{
+
+transform: scale(0.90);
+transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}

@@ -17,7 +17,7 @@ signin.style.color = "white"
 about.style.backgroundColor = "rgba(255, 255, 255, 0.168)";
 about.style.color = "white"
 boxright.innerHTML = ""
-
+singupsubmitt()
     }
     else if(button.id == "signin"){
 signin.style.backgroundColor = "aliceblue";
@@ -50,3 +50,36 @@ Streamline your dealership operations with a centralized platform designed for i
     }
 
 });
+
+
+function Submituserondatabase(){
+
+let username = document.getElementById("username").value
+let passward = document.getElementById("passward").value
+
+let users = JSON.parse(localStorage.getItem("users")) || []
+
+let user = {
+
+username: username,
+passward: passward
+
+} 
+
+users.push(user)
+
+localStorage.setItem("users", JSON.stringify(users))
+
+document.getElementById("username").value = ""
+document.getElementById("passward").value = ""
+
+}
+
+function singupsubmitt(){
+
+boxright.innerHTML = `<form>
+<input placeholder="Enter Your UserName" type="text" id="username">
+<input placeholder="Enter Your Passward" type="text" id="passward">
+<input value="Sing Up" type="button" id="buttonsinup" onclick="Submituserondatabase()">
+</form>`
+}
