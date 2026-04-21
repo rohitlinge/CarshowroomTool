@@ -1,8 +1,10 @@
 let Showroommenu = document.querySelector(".Showroommenu");
-let singup = document.getElementById("signup")
-let signin = document.getElementById("signin")
-let about = document.getElementById("about")
-let boxright = document.querySelector(".right")
+let showroomname = document.querySelector(".Showroomname");
+let singup = document.getElementById("signup");
+let signin = document.getElementById("signin");
+let about = document.getElementById("about");
+let boxright = document.querySelector(".right");
+
 
 // Function for auto show about us & buy defolt white baground about button //
 function showaboutus(){
@@ -129,6 +131,7 @@ boxright.innerHTML = `
     <h2>You signed in successfully! Now, to access the dashboard</h2>
 </div>
 `    
+showroomname.innerHTML = `${sininusername}`
 } else {
     boxright.innerHTML = `
 <div class="singinnotification">
@@ -151,7 +154,5 @@ boxright.innerHTML = `
 </div>
 
 `;
-
-
 
 }
