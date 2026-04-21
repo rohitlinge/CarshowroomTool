@@ -4,7 +4,8 @@ let singup = document.getElementById("signup");
 let signin = document.getElementById("signin");
 let about = document.getElementById("about");
 let boxright = document.querySelector(".right");
-
+let leftbox = document.querySelector(".left");
+let afterlogleftmenu = document.querySelector(".afterloginleftbar")
 
 // Function for auto show about us & buy defolt white baground about button //
 function showaboutus(){
@@ -131,7 +132,9 @@ boxright.innerHTML = `
     <h2>You signed in successfully! Now, to access the dashboard</h2>
 </div>
 `    
-showroomname.innerHTML = `${sininusername}`
+showroomname.innerHTML = `Welcome ${sininusername}, Here is What happing in your showroom`
+showroomname.style.borderBottom = "1px solid white";
+afterloginleftbarchnage()
 } else {
     boxright.innerHTML = `
 <div class="singinnotification">
@@ -154,5 +157,24 @@ boxright.innerHTML = `
 </div>
 
 `;
+
+}
+
+// after log in left side bar //
+
+function afterloginleftbarchnage(){
+
+Showroommenu.style.display = "none"
+
+afterlogleftmenu.style.display = "block"
+
+
+
+
+
+
+
+
+
 
 }
