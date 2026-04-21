@@ -171,3 +171,68 @@ color: rgba(0, 0, 0, 0.531);
 transform: scale(0.90);
 transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.singinnotification{
+
+width: 500px;
+height: 100px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 10px;
+background-color: rgba(0, 0, 0, 0.51);
+border-radius: 10px;
+}
+
+
+.singinnotification h2{
+
+color: rgb(255, 255, 255);
+font-size: 1.5rem;
+font-weight: 400;
+}
+
+.singinbuttonform{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 20px;
+width: 300px;
+height: 200px;
+border-radius: 20px;
+background-color: rgba(0, 0, 0, 0.373);
+}
+
+#sininusername{
+
+width: 200px;
+height: 30px;
+border: none;
+padding: 10px;
+}
+
+#sininpassward{
+
+width: 200px;
+height: 30px;
+border: none;
+padding: 10px; 
+}
+
+#singinbuttonsubmit{
+
+width: 150px;
+height: 30px;
+border: none;
+border-radius: 10px;
+font-weight: 600;
+color: rgba(0, 0, 0, 0.531);
+}
+
+#singinbuttonsubmit:active{
+
+transform: scale(0.90);
+transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
