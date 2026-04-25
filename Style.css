@@ -1,16 +1,13 @@
 *{
-
 padding: 0px;
 margin: 0px;
 box-sizing: border-box;
-
 }
 
 body,html{
-
 width: 100%;
 height: 100%;
-background-color: black;
+background-color: #D9E9CF;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -23,6 +20,7 @@ width: 90%;
 height: 90%;
 margin: 10px;
 border-radius: 20px;
+
 display: flex;
 justify-content: center;
 align-items: center;
@@ -30,103 +28,94 @@ flex-direction: row;
 }
 
 .left{
-
 width: 20%;
 height: 90%;
-background-color: rgba(0, 0, 0, 0.195);
+background-color: #96A78D;
 border-top-left-radius: 20px ;
 border-bottom-left-radius: 20px ;
-border: 1px solid white;
+border: 1px solid #B6CEB4;
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-align-items: space-between;
 padding: 10px;
 }
 
-.right{width: 70%;
-height: 90%;
-background-color: aliceblue;
-border-top-right-radius: 20px ;
-border-bottom-right-radius: 20px ;
-display: flex;
-justify-content: center;
-align-items: center;
+.right {
+  width: 70%;
+  height: 90%;
+  background-color: #F0F0F0;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  display: flex;
+  padding: 10px;
+}
 
+.center-view {
+  justify-content: center;
+  align-items: center;
+}
+
+.dashboard-view {
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .Showroomname{
-
 width: 90%;
 height: 20%;
 font-size: 0.8rem;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: aliceblue;
+color: #F0F0F0;
 display: flex;
 justify-content: flex-start;
 align-items: flex-start;
 padding: 10px;
-border-bottom: 1px solid white;
+border-bottom: 1px solid #B6CEB4;
 }
 
 .Showroommenu{
-
 width: 100%;
 height: 90%;
 display: flex;
-justify-content: flex-start;
-align-items: flex-start;
 flex-direction: column;
 gap: 10px;
 padding-top: 20px;
 }
 
 .leftmenubuttons{
-
 width: 100%;
 height: 40px;
 border: none;
-background-color: rgba(255, 255, 255, 0.168);
+background-color: #B6CEB4;
 font-size: 1rem;
 font-weight: 600;
 display: flex;
-justify-content: flex-start;
 align-items: center;
 padding: 10px;
-color: aliceblue;
+color: #2f3e2f;
 }
 
 .leftmenubuttons:active{
-
 transform: scaleY(1.10);
 transition: cubic-bezier(1, 0, 0, 1)
-
-
-
 }
 
 .content{
-
 width: 80%;
 height: 90%;
 font-size: 1.2rem;
 font-weight: 400;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-color: rgb(71, 71, 71);
+color: #2f3e2f;
 display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-padding: 10px;
 flex-direction: column;
 gap: 20px;
 }
 
 .content li{
-
-text-decoration: none;
 list-style: none;
 font-weight: 700;
-
 }
 
 form{
@@ -138,43 +127,38 @@ gap: 20px;
 width: 300px;
 height: 200px;
 border-radius: 20px;
-background-color: rgba(0, 0, 0, 0.373);
+background-color: #B6CEB4;
 }
 
-#username{
-
+#username,
+#passward,
+#sininusername,
+#sininpassward{
 width: 200px;
 height: 30px;
 border: none;
 padding: 10px;
+background-color: #F0F0F0;
 }
 
-#passward{
-
-width: 200px;
-height: 30px;
-border: none;
-padding: 10px; 
-}
-
-#buttonsinup{
-
+#buttonsinup,
+#singinbuttonsubmit{
 width: 150px;
 height: 30px;
 border: none;
 border-radius: 10px;
 font-weight: 600;
-color: rgba(0, 0, 0, 0.531);
+color: #2f3e2f;
+background-color: #96A78D;
 }
 
-#buttonsinup:active{
-
+#buttonsinup:active,
+#singinbuttonsubmit:active{
 transform: scale(0.90);
 transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .singinnotification{
-
 width: 500px;
 height: 100px;
 display: flex;
@@ -182,14 +166,12 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 padding: 10px;
-background-color: rgba(0, 0, 0, 0.51);
+background-color: #96A78D;
 border-radius: 10px;
 }
 
-
 .singinnotification h2{
-
-color: rgb(255, 255, 255);
+color: #F0F0F0;
 font-size: 1.5rem;
 font-weight: 400;
 }
@@ -203,48 +185,13 @@ gap: 20px;
 width: 300px;
 height: 200px;
 border-radius: 20px;
-background-color: rgba(0, 0, 0, 0.373);
-}
-
-#sininusername{
-
-width: 200px;
-height: 30px;
-border: none;
-padding: 10px;
-}
-
-#sininpassward{
-
-width: 200px;
-height: 30px;
-border: none;
-padding: 10px; 
-}
-
-#singinbuttonsubmit{
-
-width: 150px;
-height: 30px;
-border: none;
-border-radius: 10px;
-font-weight: 600;
-color: rgba(0, 0, 0, 0.531);
-}
-
-#singinbuttonsubmit:active{
-
-transform: scale(0.90);
-transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+background-color: #B6CEB4;
 }
 
 .afterloginleftbar{
-
 width: 100%;
 height: 90%;
 display: flex;
-justify-content: flex-start;
-align-items: flex-start;
 flex-direction: column;
 gap: 20px;
 padding-top: 20px;
@@ -252,26 +199,143 @@ display: none;
 }
 
 .sininbuttonafter{
-
 width: 100%;
 height: 40px;
 border: none;
-background-color: rgba(255, 255, 255, 0.168);
+background-color: #B6CEB4;
 font-size: 1rem;
 font-weight: 600;
 display: flex;
-justify-content: flex-start;
 align-items: center;
 padding: 10px;
-color: aliceblue;
+color: #2f3e2f;
 margin: 5px 0px;
 }
 
 .sininbuttonafter:active{
-
 transform: scaleY(1.10);
 transition: cubic-bezier(1, 0, 0, 1)
+}
 
+maindashbordfirstview{
+width: 100%;
+height: 100%;
+gap: 10px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 
+#addobjects{
+width: 90%;
+border: 1px solid #96A78D;
+height: 40px;
+background-color: #96A78D;
+border-radius: 30px;
+display: flex;
+align-items: center;
+gap: 10px;
+padding: 10px;
+}
 
+.button1{
+width: 100px;
+height: 25px;
+background-color: #F0F0F0;
+border: none;
+}
+
+.button1:active{
+transform: scale(0.90);
+transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+
+.dashbordinternal{
+width: 90%;
+height: 90%;
+display: grid;
+grid-gap: 10px;
+grid-template-areas: 
+"a a a a"
+"a a a a"
+"b b c c"
+"b b c c";
+}
+
+.a{
+grid-area: a;
+background-color: #B6CEB4;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.box1,.box2,.box3{
+background-color: #F0F0F0;
+}
+
+.box1{width: 40%; height: 90%;}
+.box2,.box3{width: 25%; height: 90%;}
+
+.box1 h2,.box2 h2,.box3 h2{
+padding: 10px;
+font-size: 1.2rem;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-weight: 500;
+color: #2f3e2f;
+}
+
+.b{
+grid-area: b;
+background-color: #B6CEB4;
+border-radius: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.box4,.box5,.box6{
+width: 90%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #96A78D;
+padding: 10px;
+}
+
+.c{
+grid-area: c;
+background-color: #B6CEB4;
+border-radius: 20px;
+}
+
+table {
+width: 90%;
+height: 90%;
+border-collapse: collapse;
+margin: 20px auto;
+font-family: Arial, sans-serif;
+}
+
+th, td {
+border: 1px solid #96A78D;
+padding: 10px;
+text-align: center;
+}
+
+th {
+background-color: #96A78D;
+color: #F0F0F0;
+}
+
+tr:nth-child(even) {
+background-color: #D9E9CF;
+}
+
+tr:hover {
+background-color: #B6CEB4;
 }

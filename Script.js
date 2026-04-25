@@ -49,6 +49,8 @@ signin.style.backgroundColor = "rgba(255, 255, 255, 0.168)";
 signin.style.color = "white"
 about.style.backgroundColor = "rgba(255, 255, 255, 0.168)";
 about.style.color = "white"
+boxright.classList.remove("dashboard-view");
+boxright.classList.add("center-view");
 singupsubmitt()
     }
     else if(button.id == "signin"){
@@ -58,6 +60,8 @@ singup.style.backgroundColor = "rgba(255, 255, 255, 0.168)";
 singup.style.color = "white"
 about.style.backgroundColor = "rgba(255, 255, 255, 0.168)";
 about.style.color = "white"
+boxright.classList.remove("dashboard-view");
+boxright.classList.add("center-view");
 sininboxright()
     }
     else if(button.id == "about"){
@@ -128,10 +132,52 @@ return val.passward === sininpassward && val.username === sininusername
 
 if(result){
 boxright.innerHTML = `
-<div class="singinnotification">
-    <h2>You signed in successfully! Now, to access the dashboard</h2>
+<maindashbordfirstview>
+<div id="addobjects">
+<input class="button1" type="button" onclick="" value="ADD Cars">
+<input class="button1" type="button" onclick=""value="ADD Cars">
+<input class="button1" type="button" onclick=""value="ADD Cars">
+
 </div>
+<div class="dashbordinternal">
+<div class="a">
+
+<div class="box1"><h2>Total Inventory Count</h2></div>
+<div class="box2"><h2>Inventory by Status</h2></div>
+<div class="box3"><h2>Stock Ageing Analysis</h2></div>
+</div>
+<div class="b">
+<div class="box4"><h3>Hatchbacks</h3><img src="https://imgd.aeplcdn.com/1280x720/cw/ec/32475/Maruti-Suzuki-New-Swift-Exterior-116090.jpg?wm=0" style="width: 100px; height:60px" ></div>
+<div class="box5"><h3>Sedans</h3><img src="https://ackodrive-prod.ackoassets.com/image/mercedes-benz/amg-s-63-e-performance/obsidian-black/default/Transparent.png" style="width: 120px; height:50px" ></div>
+<div class="box6"><h3>SUVs</h3><img src="https://www.vertumotors.com/images/new/vertu/car/toyota/corolla/colour-swatches/metallic-eclipseblack.jpg" style="width: 100px; height:60px" ></div>
+</div>
+<div class="c"> <table>
+    <tr>
+      <th>Car Type</th>
+      <th>Total Cost</th>
+      <th>Profit Predict</th>
+    </tr>
+    <tr>
+      <td>Hatchbacks</td>
+      <td>14</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Sedans</td>
+      <td>15</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>SUVs</td>
+      <td>14</td>
+      <td>A+</td>
+    </tr>
+  </table></div>
+</div>
+</maindashbordfirstview>
 `    
+boxright.classList.remove("center-view");
+boxright.classList.add("dashboard-view");
 showroomname.innerHTML = `Welcome ${sininusername}, Here is What happing in your showroom`
 showroomname.style.borderBottom = "1px solid white";
 afterloginleftbarchnage()
@@ -173,7 +219,7 @@ afterlogleftmenu.style.display = "block"
 
 
 
-
+ 
 
 
 
